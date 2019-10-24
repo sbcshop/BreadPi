@@ -32,15 +32,17 @@ bread_pi = BreadPi()
 #  Use LED number as argument 
 bread_pi.led_on('L1')
 bread_pi.led_on('L2')
-bread_pi.led_on('L3')
-bread_pi.led_on('L4')
+#  Or use Pin numbers
+bread_pi.led_on(38)
+bread_pi.led_on(40)
 
 #  To Turn Off LEDs use led_off 
 #  Use LED number as argument
 bread_pi.led_off('L1')
 bread_pi.led_off('L2')
-bread_pi.led_off('L3')
-bread_pi.led_off('L4')
+#  Or Pin Number
+bread_pi.led_off(38)
+bread_pi.led_off(40)
 
 #  To Turn On or Turn Off buzzer
 #  Use buzzer_on, buzzer_off
@@ -52,5 +54,15 @@ bread_pi.buzzer_off()
 or 
 
 take digital inputs from buttons using button function of BreadPi class.
+
+```
+bread_pi = BreadPi()
+#  To use switches Of BreadPi
+#  use btton function with pin number or switch number of BreadPi as args
+status = bread_pi.button('SW1')
+status = bread_pi.button(31)
+
+```
+
 
 You can pass string printed on BreadPi like, 'L1' or 'SW1' or customized pin number like 29, 31 directly to the functions. 
