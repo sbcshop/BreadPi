@@ -140,12 +140,12 @@ class BreadPi(PCF8591):
         """
         Take Digital input from Button
         :param button_pin: String('SW1' or 'SW2') or Board Pin Number(integer)
-        :return: None
+        :return: Button Status as Boolean
         """
         if not isinstance(button_pin, int):
             button_pin = self.button_pins[button_pin]
         self.setup(input_pin=button_pin)
-        GPIO.input(button_pin)
+        return GPIO.input(button_pin)
 
 
 try:
