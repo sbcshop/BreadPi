@@ -25,7 +25,32 @@ data = bread_pi.read_analog(register=1)  #  Read Data from AIN1
 bread_pi.write_analog(register=1, value=100)  #  Covert Digital data to analog
 ```
 
-use led_on, led_off, buzzer_on, buzzer_off or take digital inputs from 
-buttons using button function of BreadPi class.
+To use BreadPi LEDs and buzzer- 
+```
+bread_pi = BreadPi()
+#  To Turn On LEDs use led_on method
+#  Use LED number as argument 
+bread_pi.led_on('L1')
+bread_pi.led_on('L2')
+bread_pi.led_on('L3')
+bread_pi.led_on('L4')
+
+#  To Turn Off LEDs use led_off 
+#  Use LED number as argument
+bread_pi.led_off('L1')
+bread_pi.led_off('L2')
+bread_pi.led_off('L3')
+bread_pi.led_off('L4')
+
+#  To Turn On or Turn Off buzzer
+#  Use buzzer_on, buzzer_off
+bread_pi.buzzer_on()
+bread_pi.buzzer_off()
+
+```
+
+or 
+
+take digital inputs from buttons using button function of BreadPi class.
 
 You can pass string printed on BreadPi like, 'L1' or 'SW1' or customized pin number like 29, 31 directly to the functions. 
