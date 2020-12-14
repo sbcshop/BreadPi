@@ -1,7 +1,7 @@
 # BreadPi
 BreadPi is a multi-purpose HAT(Hardware Attached on Top) that consists of a mini breadboard on top, ADC, a Programmable Buzzer, Programmable LEDs, push buttons, and 5V tolerant inputs at the Operating Voltage of 3.3V DC at a single place. SB Components developed BreadPi with advanced features like independently controllable LEDs, inputs(Analog & digital), a mini breadboard that helps the user to prototype their projects in an efficient way. 
 
-<img src="images/product_pic1.png">
+<img src="Schematic/breadpi.png">
 
 Install breadpi package on your Raspberry Pi using
 
