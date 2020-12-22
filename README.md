@@ -69,3 +69,14 @@ status = bread_pi.button(31)
 
 
 You can pass string printed on BreadPi like, 'L1' or 'SW1' or customized pin number like 29, 31 directly to the functions. 
+
+### Video Tutorial
+
+<div align="center">
+      <a href="https://www.youtube.com/watch?v=Wb4c5ab5QEw">
+     <img 
+      src="https://img.youtube.com/vi/Wb4c5ab5QEw/0.jpg" 
+      alt="BreadPi - Multipurpose HAT for Raspberry Pi" 
+      style="width:100%;">
+      </a>
+    </div>
