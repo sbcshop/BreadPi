@@ -20,7 +20,7 @@ import the module with
 
 Access PCF8591 or GPIOs directly
 
-```
+```python
 bread_pi = BreadPi()
 
 data = bread_pi.read_analog(register=1)  #  Read Data from AIN1
@@ -29,7 +29,7 @@ bread_pi.write_analog(register=1, value=100)  #  Covert Digital data to analog
 ```
 
 To use BreadPi LEDs and buzzer- 
-```
+```python
 bread_pi = BreadPi()
 #  To Turn On LEDs use led_on method
 #  Use LED number as argument 
@@ -58,7 +58,7 @@ or
 
 take digital inputs from buttons using button function of BreadPi class.
 
-```
+```python
 bread_pi = BreadPi()
 #  To use switches Of BreadPi
 #  use btton function with pin number or switch number of BreadPi as args
