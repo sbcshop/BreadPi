@@ -4,12 +4,12 @@ BreadPi is a multi-purpose HAT(Hardware Attached on Top) that consists of a mini
 
 ## Installation Steps:
 
-First enable i2c interface by running "sudo raspi-config" command then select interfacing options >> I2C >> click on enter to enable it.
+* First enable i2c interface by running "sudo raspi-config" command then select interfacing options >> I2C >> click on enter to enable it.
 
                                         OR
-You can also use GUI to enable i2c, click on Menu > Preferences > Raspberry Pi Configuration > interfaces, Then enable I2C
+* You can also use GUI to enable i2c, click on Menu > Preferences > Raspberry Pi Configuration > interfaces, Then enable I2C
 
-Install breadpi package on your Raspberry Pi using
+* Install breadpi package on your Raspberry Pi using
 
 `pip3 install breadpi`
 
@@ -18,12 +18,12 @@ or
 `python3 -m pip install breadpi`
 
 
-import the module with 
+* import the module with 
 
 `from breadpi import BreadPi`
 
 
-Access PCF8591 or GPIOs directly
+* Access PCF8591 or GPIOs directly
 
 ```python
 bread_pi = BreadPi()
@@ -33,7 +33,7 @@ data = bread_pi.read_analog(register=1)  #  Read Data from AIN1
 bread_pi.write_analog(register=1, value=100)  #  Covert Digital data to analog
 ```
 
-To use BreadPi LEDs and buzzer- 
+* To use BreadPi LEDs and buzzer- 
 ```python
 bread_pi = BreadPi()
 #  To Turn On LEDs use led_on method
@@ -61,7 +61,7 @@ bread_pi.buzzer_off()
 
 or 
 
-take digital inputs from buttons using button function of BreadPi class.
+* Take digital inputs from buttons using button function of BreadPi class.
 
 ```python
 bread_pi = BreadPi()
