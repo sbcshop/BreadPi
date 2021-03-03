@@ -4,6 +4,11 @@ BreadPi is a multi-purpose HAT(Hardware Attached on Top) that consists of a mini
 
 ## Installation Steps:
 
+First enable i2c interface by running "sudo raspi-config" command then select interfacing options >> I2C >> click on enter to enable it.
+
+                                        OR
+You can also use GUI to enable i2c, click on Menu > Preferences > Raspberry Pi Configuration > interfaces, Then enable I2C
+
 Install breadpi package on your Raspberry Pi using
 
 `pip3 install breadpi`
